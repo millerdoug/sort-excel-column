@@ -18,10 +18,10 @@ public class SortExcelApplication {
 
 	public static void main(String[] args) throws IOException {
 		SortExcelApplication sea = new SortExcelApplication();
-		sea.dothething("testsheet.xlsx", "B",3);
+		sea.sortColumn("testsheet.xlsx", "B",3);
 	}
 
-	private boolean dothething(String path, String col, int stRow) {
+	private boolean sortColumn(String path, String col, int stRow) {
 
         try {
         	File fle = new File(path);
